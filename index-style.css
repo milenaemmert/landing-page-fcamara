@@ -1,0 +1,460 @@
+body {
+    font-family: 'Metropolis', sans-serif;
+}
+
+/*.....Header.....*/
+header {
+    width: 100%;
+    height: 64px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /*vertical horizontal blur spread color*/
+    position: fixed;
+    z-index: 50;
+}
+
+.headerContainer {
+    max-width: 1200px;
+    height: 100%;      /* margin auto não afeta o height -.-*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.headerContainer svg {
+    fill: #FC6027;
+    transition: 0.45s fill;
+}
+
+.headerContainer svg:hover {
+    fill: #FE4400;
+}
+
+.headerContainer nav ul {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
+
+.headerContainer a {
+    text-decoration: none;
+    text-transform: lowercase;
+    color: #333333;
+    font-weight: 800;
+    transition: 0.4s color;
+    display: flex;
+}
+
+.headerContainer #iconMenuSVG {
+    display: none;
+    transition: 0.45s transform;
+}
+
+
+.headerContainer li:nth-child(2) a { /*first-child, last-child*/
+    color: #FE4400;
+}
+
+.headerContainer a:hover {
+    color: #FE4400;
+}
+
+/*.....Main.....*/
+main {
+    width: 100%;
+    background-color: #4B4FA1;
+    height: 500px;
+    color: #ffffff;    
+    padding: 96px 0 52px 0;
+}
+
+.mainContainer {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainContainer div {
+    width: 496px;
+    z-index: 1;
+}
+
+.mainContainer h1 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.mainContainer div :nth-child(2) {
+    font-size: 48px;
+    font-weight: 800;
+    margin-top: 16px;
+}
+
+.mainContainer div :nth-child(3) {
+    font-size: 20px;
+    font-weight: 100;
+    width: 400px;
+    margin-top: 24px;
+    line-height: 1.3;
+}
+
+.mainContainer button {
+    width: 296px;
+    height: 48px;
+    background-color: #FC6027;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Metropolis', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    transition: 0.45s background-color;
+}
+
+.mainContainer button:hover {
+    background-color: #FE4400;
+    cursor: pointer;
+}
+
+.mainContainer button svg {
+    fill: #ffffff;
+}
+
+.mainContainer button use {
+    transform: translateX(7px)
+}
+
+/*.....Section Yellow box.....*/
+.yellowBoxContainer { 
+    max-width: 1200px;   
+    height: 40px;
+    margin: -20px auto;
+    border-radius: 8px;
+    background-color: #FAD15B;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#yellowBoxSymptoms {
+    text-decoration: none;
+}
+
+#yellowBoxWarning, #yellowBoxSymptoms {
+    display: flex;
+    align-items: center;
+    color: #333333;
+    fill: #333333;
+}
+
+#yellowBoxSymptoms {
+    gap: 0 4px;
+    font-weight: 800;
+    transition: 0.45s color, 0.45s fill;
+}
+
+#yellowBoxSymptoms:hover {
+    color: #FE4400;
+    fill: #FE4400;
+    cursor: pointer;
+}
+
+#yellowBoxSymptoms svg {
+    transition: 0.5s transform;
+}
+
+#yellowBoxSymptoms:hover svg {
+    transform: translateX(4px);
+}
+
+/*.....Section White box.....*/
+.warningAndRecomendations {
+    width: 100%;
+}
+
+.whiteBoxContainer { 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0 80px 0;
+}
+
+.whiteBoxContainer h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #333333;
+    text-align: center;
+    font-size: 16px;
+}
+
+.whiteBoxContainer h2 span {
+    margin-top: 12px;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+
+.whiteBoxAllIcons { 
+    width: 100%;
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.whiteBoxImagesTxt {
+    text-align: center;
+    width: 220px;
+}
+
+.whiteBoxImagesTxt h1 {
+    color: #414099;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 24px;
+}
+
+.whiteBoxImagesTxt p {
+    color: #666666;
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 8px;
+}
+
+.whiteBoxContainer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 84px;
+    text-decoration: none;
+    color: #333333;
+    font-weight: 800;
+    fill: #333333;
+    transition: 0.45s color, 0.45s fill;
+}
+
+.whiteBoxContainer a:hover {
+    color: #FE4400;
+    fill: #FE4400;
+}
+
+.whiteBoxContainer svg {
+    transition: 0.5s transform;
+}
+
+.whiteBoxContainer a:hover svg {
+    transform: translateX(4px)
+}
+
+/*.....Team picture.....*/
+.teamPic {
+    background-image: url(images/imgTeam.jpg);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+/*.....Footer.....*/
+footer {
+    width: 100%;
+    padding: 96px 0;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.footerContainer {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerLogoAndSocialMedia #anchorLogo svg {
+    margin-left: 0px;
+    fill: #ffffff;
+    margin-bottom: 36px;
+    transition: 0.45s fill;
+}
+
+.footerLogoAndSocialMedia #anchorLogo svg:hover {
+    fill: #FE4400;
+}
+
+.socialMedia {
+    display: block;
+}
+
+.socialMedia #slogan {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 48px;
+}
+
+.socialMedia ul li {
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 24px;
+}
+
+.socialMedia ul li a {
+    fill: #ffffff;
+    transition: 0.45s fill;
+}
+
+.socialMedia ul li a:hover {
+    fill: #FE4400;
+}
+
+.socialMedia #copy {
+    font-size: 10px;
+}
+
+.whoAreWe h1 {
+    font-weight: 800;
+    text-transform: lowercase;
+    margin-bottom: 16px;
+}
+
+.whoAreWe p {
+    margin-bottom: 10px;
+}
+
+.whoAreWe p a {
+    cursor: pointer;
+    transition: 0.45s color, 0.8s padding-left;
+}
+
+.whoAreWe p a:hover {
+    color: #FE4400;
+    font-weight: 600;
+}
+
+.whereAreWe h1 {
+    font-weight: 800;
+    text-transform: lowercase;
+    margin-bottom: 16px;
+}
+
+.whereAreWe .city {
+    margin-bottom: 24px;
+}
+
+.whereAreWe .city h1 {
+    font-weight: 600;
+    text-transform: none;
+    margin-bottom: 10px;
+}
+
+.whereAreWe .city h2 {
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+/*.....Responsive.....*/
+@media screen and (max-width:1320px) {
+    .headerContainer, .mainContainer, .yellowBoxContainer, .whiteBoxContainer, 
+    .footerContainer {
+        width: calc(100% - 96px);
+    }
+
+    .whiteBoxAllIcons {
+        row-gap: 40px;
+        justify-content: space-evenly;
+    }
+
+    .whiteBoxImagesTxt {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .headerContainer li:not(:last-child) {
+        display: none;
+    }
+    
+    .headerContainer #iconMenuSVG {
+        display: initial;
+    }
+
+    .headerContainer #iconMenuSVG:hover {
+        transform: rotate(180deg);
+    }
+
+    .mainContainer img {
+        position: absolute;
+        right: 48px;
+        opacity: 0.5;
+    }
+
+    .mainContainer img {
+        opacity: 0.3;
+    }
+
+    .whiteBoxImagesTxt {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .yellowBoxContainer {
+        height: 64px;
+        flex-wrap: wrap;       
+    }
+}
+
+@media screen and (max-width:670px) {
+    .whiteBoxImagesTxt {
+        width: 70%;
+    }
+
+    .whiteBoxAllIcons {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .footerContainer {
+        flex-direction: column-reverse;
+        align-items: center;
+        row-gap: 40px;
+    }
+
+    .footerContainer div {
+        width: 300px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:360px) {
+    header {
+        width: 360px;
+    }
+
+    .headerContainer, .mainContainer, .yellowBoxContainer, .whiteBoxContainer, 
+    .footerContainer, .mainContainer div, .mainContainer div :nth-child(3) {
+        width: calc(100% - 16px);
+    }
+
+    .mainContainer img {
+        display: none;
+    }
+
+    #yellowBoxWarning {
+        display: none;       
+    }
+
+    .teamPic {
+        display: none;
+    }
+}
+
+
+
+
