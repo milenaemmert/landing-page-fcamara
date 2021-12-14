@@ -410,26 +410,7 @@ footer {
     .whiteBoxImagesTxt {
         width: 40%;
     }
-}
 
-@media screen and (max-width:760px) {
-    .yellowBoxContainer {
-        height: 64px;
-        flex-wrap: wrap;       
-    }
-}
-
-@media screen and (max-width:670px) {
-    .whiteBoxImagesTxt {
-        width: 70%;
-    }
-
-    .whiteBoxAllIcons {
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width:960px) {
     .footerContainer {
         flex-direction: column-reverse;
         align-items: center;
@@ -442,9 +423,29 @@ footer {
     }
 }
 
-@media screen and (max-width:360px) {
-    header {
-        width: 360px;
+@media screen and (max-width:670px) {
+    .yellowBoxContainer {
+        height: 64px;
+        flex-wrap: wrap;  
+    }
+
+    .whiteBoxImagesTxt {
+        width: 70%;
+    }
+
+    .whiteBoxAllIcons {
+        justify-content: center;
+    }
+
+    .teamPic {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:475px) {
+    .headerContainer {
+        width: 475px;
     }
 
     .headerContainer, .mainContainer, .yellowBoxContainer, .whiteBoxContainer, 
@@ -458,10 +459,6 @@ footer {
 
     #yellowBoxWarning {
         display: none;       
-    }
-
-    .teamPic {
-        display: none;
     }
 }
 
